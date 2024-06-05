@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- start css link -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- end css link -->
+
+    <!-- start js link -->
+    <script src="js/sweetalert.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- end js link -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-light shadow-lg fixed-top navbar-light">
+        <div class="container-fluid">
+            <img src="img/logo.jpg" alt="" class="rounded-circle" width="50">
+          <a href="#" class="mx-4 text-white navbar-brand">HMS</a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="navbar-collapse collapse" id="myMenu">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item text-white fw-bold">just for code</li>
+              </ul>
+         </div>
+        </div>
+    </nav>
+    <br><br><br>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- nav tab -->
+                <ul class="nav nav-tab">
+                    <li class="nav-item  ">
+                        <a href="#signup" class="nav-link " data-bs-toggle="tab">
+                            Signup
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link active" data-bs-toggle="tab">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+                <!-- nav pen -->
+                <div class="tab-content">
+                    <div class="tab-pane   container mt-3" id="signup">
+                        <img src="img/signup-2.webp" class="w-25 " alt="">
+                        <form class="reg-form">
+                            <input required name="fullname" type="text" placeholder="Fullname" class="form-control mb-3 ">
+                            <input required name="hotelname" type="text" placeholder="Hotel Name" class="form-control mb-3 ">
+                            <input required name="hotelroom" type="number" placeholder="Hotels Rooms" class="form-control mb-3 ">
+                            <input required name="mobile" type="number" placeholder="Mobile" class="form-control mb-3 ">
+                            <input required name="email" type="email" placeholder="Email" class="form-control mb-3 ">
+                            <input required name="password" type="password" placeholder="Password" class="form-control mb-3 ">
+                            <button type="submit" class="btn btn-primary w-100">Register</button>
+                        </form>
+                    </div>
+                    <div class="tab-pane active  container mt-3" id="login">
+                        <img src="img/login-3.jpg" class="w-25 rounded-circle mb-1   " alt="" >
+                        <form class="login-form">
+                            <input type="email" placeholder="Email" class="form-control mb-3 ">
+                            <input type="password" placeholder="Password" class="form-control mb-3 ">
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center col-md-6 mt-5">
+                <img src="img/hotel-1.jpg" class="w-100 " alt="not found">
+            </div>
+        </div>
+
+    </div>
+    <!-- start script  link -->
+    <script src="js/index.js"></script>
+    <!-- end script link -->
+</body>
+</html>
